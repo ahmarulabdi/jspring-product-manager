@@ -13,7 +13,7 @@ public class Product {
     private String madein;
     private float price;
 
-    public Product() {
+    protected Product() {
     }
 
     @Id
@@ -42,19 +42,19 @@ public class Product {
         this.brand = brand;
     }
 
-    public String getMadein() {
-        return madein;
-    }
-
-    public void setMadein(String madein) {
-        this.madein = madein;
-    }
-
     public float getPrice() {
         return price;
     }
 
     public void setPrice(float price) {
         this.price = price;
+    }
+
+    public String getMadein() {
+        return madein;
+    }
+
+    public void setMadein(String madein) {
+        this.madein = madein;
     }
 }
